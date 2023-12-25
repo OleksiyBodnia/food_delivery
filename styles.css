@@ -1,0 +1,314 @@
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+body{
+    background-color: #FEFEFE;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /* Це значення можна змінити в залежності від потреб вашого дизайну */
+    background: var(--White, #FEFEFE);
+/* Meny shadow */
+box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+}
+
+
+@media screen and (min-width: 320px){
+    .header-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .header-btn{
+        fill: #7eb101;
+        transition: fill 0.3s ease;
+    }
+    .header-btn:focus,
+    .header-btn:hover {
+        fill: #FFE550;
+    }
+
+    .mob-menu{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50px;
+    right: 20px;
+    padding: 16px;
+    width: 130px;
+    height: 255px;
+    flex-shrink: 0;
+    border-radius: 30px 0px 30px 30px;
+    background: var(--White, #FEFEFE);
+    /* Meny shadow */
+    box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
+    }
+    .menu-link {
+        color: #000;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        transition: color 0.3s ease;
+    }
+    
+    .menu-link:focus,
+    .menu-link:hover {
+        color: #A7CE47;
+    }
+    
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 32px;
+    }
+    .close-btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: fill 0.3s ease;
+    }
+
+    .close-btn:focus,
+    .close-btn:hover{
+        fill: #A7CE47;
+    }
+
+    .dek-nav{
+        display: none;
+    }
+
+    .hero{
+        padding-top: 132px;
+        padding-bottom: 60px;
+    }
+    .hero-h{
+        min-width: 280px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 28px;
+    }
+    .hero-p{
+        min-width: 266px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 28px;
+
+    }
+    .hero-order{
+        display: inline-flex;
+        height: 32px;
+        padding: 6px 18px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        color: var(--Black, #2C2C2C);
+        text-align: right;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5;
+        border-radius: 30px;
+        background: var(--Button-green, #BBF330);
+        transition: color 0.3s ease;
+    }
+    .hero-order:focus,
+    .hero-order:hover{
+        color: #FEFEFE;
+    }
+    .hero-img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .header-btn{
+        display: none;
+    }
+    .dek-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .nav-desk{
+        display: flex;
+        gap: 28px;
+    }
+    .nav-desk-link{
+        color: #000;   
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: none;
+        transition: color 0.3s ease, text-decoration-line 0.3s ease;
+    }
+    .nav-desk-link:focus,
+    .nav-desk-link:hover{
+        color: #BBF330;
+        text-decoration-line: underline;
+    }
+    .order-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--Black, #2C2C2C);
+        text-align: right;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5;
+        /* 19.5px */
+        display: flex;
+        height: 32px;
+         padding: 6px 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background: var(--Button-green, #BBF330);
+        transition: color 0.3s ease;
+    }
+    .order-btn:focus,
+    .order-btn:hover{
+        color: #FEFEFE;
+    }
+    .hero{
+        position: relative;
+        padding-bottom: 94px;
+    }
+    .hero-img{
+        display: block;
+        position: absolute;
+        top: 196px;
+        right: 46px;
+        border-radius: 320px;
+        border: 14px solid var(--Yellow-main, #FFE550);
+        background: #FFF;
+    }
+    .hero-h{
+        width: 537px;
+        margin-bottom: 44px;
+        color: #2C2C2C;        
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .hero-p{
+        width: 336px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }  
+}
+@media screen and (min-width: 1280px){
+    .hero{
+        padding-bottom: 170px;
+        padding-top: 232px;
+    }
+    .hero-h{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .hero-p{
+        width: 512px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .hero-img{
+        top: 131px;
+        right: 24px;
+        width: 511px;
+        height: 511px;
+        border-radius: 560px;
+        border: 14px solid var(--Yellow-main, #FFE550);
+        background: #FFF;
+    }
+}
