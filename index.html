@@ -32,8 +32,8 @@
                         <li class="nav-desk-item"><a href="" class="nav-desk-link link">Menu</a></li>
                         <li class="nav-desk-item"><a href="" class="nav-desk-link link">Contact</a></li>
                     </ul>
-                </nav>               
-                <a href="" class="order-btn">Order Now</a>
+                </nav>
+                <button class="order-btn" id="openForm">Order Now</button>    
             </div>
         </div>
 
@@ -68,7 +68,7 @@
             <h1 class="hero-h">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="hero-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
             cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-            <a href="" class="hero-order">Order Now</a>
+            <button class="hero-order" id="openForm2">Order Now</button>
             <img class="hero-img" src="./img/hero-tablet.png" alt="food photo"
             srcset="./img/hero-tablet.png 292w,
             ./img/hero-tablet@2x.png 584w,
@@ -79,61 +79,94 @@
 
         <section class="about">
             <div class="container about-div">
-                <div class="about-img-div">
-                    <div class="about-div-img">
-                        <img src="./img/aple-mob.png" alt="apple photo" class="about-img" srcset="./img/aple-mob.png 203w,
-                            ./img/aple-mob@2x.png 406w" sizes="(min-width: 320px) 203px">
-                        </div>
-                </div>
-
-                <div class="about-tab-div">
-                    <div class="about-tab">
-                        <img src="./img/aple1-tab.png" alt="apple photo" class="about-tab-img" srcset="./img/aple1-tab.png 264w,
-                            ./img/aple1-tab@2x.png 528w" sizes="(min-width: 768px) 264px">
+                
+                <div class="about-img-desk">
+                    <div class="about-desk-img">
+                        <img src="./img/aple-desk.png" alt="apple photo" 
+                        class="about-desk" 
+                        srcset="./img/aple-desk.png 402w,
+                            ./img/aple-desk@2x.png 804w" 
+                        sizes="(min-width: 1280px) 402px">
                     </div>
                 </div>
-
-                <img src="./img/aple2-tab.png" alt="apple photo" 
-                    class="about-tab-second-img" 
-                    srcset="./img/aple2-tab.png 166w,
-                        ./img/aple2-tab@2x.png 332w" 
-                        sizes="(min-width: 768px) 166px">
-                <img src="./img/aple3-tab.png" alt="apple photo" 
-                class="about-tab-third-img" 
-                srcset="./img/aple3-tab.png 108w,
-                        ./img/aple3-tab@2x.png 216w" 
-                        sizes="(min-width: 768px) 108px">
-                
-                <h1 class="about-h">What’s Special About Our Offerings</h1>
-                <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                <ul class="about-list">
-                    <li class="about-item">
-                        <div class="div-svg">
-                            <svg class="about-svg" width="32" height="32">
-                                <use href="./img/sprite.svg#rocket"></use>
-                            </svg>
-                        </div>    
-                        <h2 class="about-list-h">Fasest Delivery</h2>
-                        <p class="about-list-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    </li>
-                    <li class="about-item">
-                        <div class="div-svg">
-                            <svg class="about-svg" width="32" height="32">
-                                <use href="./img/sprite.svg#touch"></use>
-                            </svg>
+                    
+                <div class="about-second">
+                    <div class="about-img-div">
+                        <div class="about-div-img">
+                            <img src="./img/aple-mob.png" alt="apple photo" class="about-img" srcset="./img/aple-mob.png 203w,
+                                                ./img/aple-mob@2x.png 406w" sizes="(min-width: 320px) 203px">
                         </div>
-                        <h2 class="about-list-h">Easy to order</h2>
-                        <p class="about-list-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                    </li>
-                </ul>
-                <button class="about-btn">Order Now</button>
-                <a href="" class="about-link">Read More 
-                    <svg class="arrow" width="32" height="32">
-                    <use href="./img/sprite.svg#arrow"></use>
-                </svg></a>
+                    </div>
+                    
+                    <div class="about-tab-div">
+                        <div class="about-tab">
+                            <img src="./img/aple1-tab.png" alt="apple photo" class="about-tab-img" srcset="./img/aple1-tab.png 264w,
+                                                ./img/aple1-tab@2x.png 528w" sizes="(min-width: 768px) 264px">
+                        </div>
+                    </div>
+                    
+                    <img src="./img/aple2-tab.png" alt="apple photo" class="about-tab-second-img" srcset="./img/aple2-tab.png 166w,
+                                            ./img/aple2-tab@2x.png 332w" sizes="(min-width: 768px) 166px">
+                    <img src="./img/aple3-tab.png" alt="apple photo" class="about-tab-third-img" srcset="./img/aple3-tab.png 108w,
+                                            ./img/aple3-tab@2x.png 216w" sizes="(min-width: 768px) 108px">
+                    
+                    <h1 class="about-h">What’s Special About Our Offerings</h1>
+                    <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    <ul class="about-list">
+                        <li class="about-item">
+                            <div class="div-svg">
+                                <svg class="about-svg" width="32" height="32">
+                                    <use href="./img/sprite.svg#rocket"></use>
+                                </svg>
+                            </div>
+                            <h2 class="about-list-h">Fasest Delivery</h2>
+                            <p class="about-list-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                eros.</p>
+                        </li>
+                        <li class="about-item">
+                            <div class="div-svg">
+                                <svg class="about-svg" width="32" height="32">
+                                    <use href="./img/sprite.svg#touch"></use>
+                                </svg>
+                            </div>
+                            <h2 class="about-list-h">Easy to order</h2>
+                            <p class="about-list-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                eros.</p>
+                        </li>
+                    </ul>
+                    <button class="about-btn"  id="openForm3">Order Now</button>
+                    <a href="" class="about-link">Read More
+                        <svg class="arrow" width="32" height="32">
+                            <use href="./img/sprite.svg#arrow"></use>
+                        </svg></a>
+                </div>
+                
             </div>
         </section>
+        <div class="overlay" id="overlay"></div>
+        <div class="order-form-div" id="orderFormDiv">
+            <div class="close-div">
+                <button class="close-btn-form">
+                    <svg class="close-form" width="12" height="12">
+                        <use href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                
+            </div>
+            
+            <form class="order-form" id="myForm">
+                <h2 class="form-h">Order Form</h2>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" placeholder="Your name" pattern=".*\S+.*" required>
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="tel" id="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" pattern=".*\S+.*" required>
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <button type="submit" class="form-btn">Send</button>
+            </form>
+        </div>
     </main>
     <footer></footer>
 </body>
