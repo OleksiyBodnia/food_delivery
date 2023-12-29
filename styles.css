@@ -463,6 +463,7 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
     }
 
     .fav-list{
+        justify-content: center;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -485,6 +486,98 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
     }
     .fav-item1{
         display: none;
+    }
+
+    .comments{
+        background-color: #FFE550;
+    }
+
+    .com-div{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .com-h{
+        width: 280px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .com-p{
+        width: 280px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 32px;
+    }
+
+    .com-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+    .com-item{
+        position: relative;
+        padding-top: 7px;
+        padding-left: 8px;
+        padding-bottom: 11px;
+        width: 280px;
+        flex-shrink: 0;
+        background-color: #fff;
+        border-radius: 0 25px 25px 25px;
+    }
+    .com-svg{
+        margin-bottom: 29px;
+    }
+    .com-item-p{
+        width: 264px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 41px;
+    }
+
+    .com-item-h{
+        color: var(--Black, #2C2C2C);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5; /* 21px */
+    }
+
+    .com-item-p2{
+        color: var(--Black, #2C2C2C);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5; /* 21px */
+    }
+
+    .com-item-sec{
+        margin-bottom: 41px;
+    }
+
+    .item-div{
+        position: absolute;
+        bottom: 13px;
+        left: 72px;
+    }
+    .item-div::after{
+        content: "";
+        width: 0.854px;
+        height: 45px;
+        position: absolute;
+        right: -10px;
+        bottom: -3px;
+        background: #7EB101;
     }
 }
 
@@ -716,6 +809,51 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
         margin-bottom: 60px;
     }
 
+    .com-h{
+        width: 501px;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 21.5px;
+    }
+    .com-p{
+        width: 395px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 34.5px;
+    }
+    .com-list{
+        flex-direction: row;
+        gap: 32px;
+    }
+    .com-item{
+        width: 336px;
+        height: 261.889px;
+        flex-shrink: 0;
+        padding-top: 17px;
+        padding-left: 12px;
+        padding-bottom: 32px;
+    }
+    .com-svg{
+        margin-bottom: 26px;
+    }
+    .com-item-p{
+        width: 312px;
+        height: 90.159px;
+        flex-shrink: 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 29px;
+    }
+
+    .item-div{
+        left: 76px;
+        bottom: 34px;
+    }
+
+
 }
 @media screen and (min-width: 1280px){
     .hero{
@@ -825,7 +963,61 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
         height: 316px;
     }
 
-    
+    .fav-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fav-list{
+        /* padding: 0 auto; */
+        margin: 0 auto;
+    }
+    .fav-item,
+    .fav-item1{
+        margin: 0;
+    }
+
+    .com-div{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .com-h{
+        width: 501px;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .com-p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 32px;
+ 
+    }
+    .com-list{
+        justify-content: start;
+        gap: 140px;
+    }
+
+
+    .com-item{
+        width: 501px;
+        height: 227px;
+        padding-top: 14px;
+        padding-left: 14px;
+        padding-bottom: 16px;
+    }
+    .com-item-p{
+        width: 473px;
+        height: auto;
+        flex-shrink: 0;
+        margin-bottom: 42px;
+    }
+    .item-div{
+        left: 78px;
+        bottom: 18px;
+    }
 
 
     
