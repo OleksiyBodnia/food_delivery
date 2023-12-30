@@ -28,9 +28,9 @@
                     <ul class="nav-desk list">
                         <li class="nav-desk-item"><a href="#hero" class="nav-desk-link link">Home</a></li>
                         <li class="nav-desk-item"><a href="#about" class="nav-desk-link link">About</a></li>
-                        <li class="nav-desk-item"><a href="#fav" class="nav-desk-link link">Service</a></li>
-                        <li class="nav-desk-item"><a href="" class="nav-desk-link link">Menu</a></li>
-                        <li class="nav-desk-item"><a href="" class="nav-desk-link link">Contact</a></li>
+                        <li class="nav-desk-item"><a href="" class="nav-desk-link link">Service</a></li>
+                        <li class="nav-desk-item"><a href="#fav" class="nav-desk-link link">Menu</a></li>
+                        <li class="nav-desk-item"><a href="#contact" class="nav-desk-link link">Contact</a></li>
                     </ul>
                 </nav>
                 <button class="order-btn" id="openForm">Order Now</button>    
@@ -46,19 +46,19 @@
             </button>
             <ul class="menu-list list">
                 <li class="menu-item">
-                    <a href="#hero" class="menu-link link">Home</a>
+                    <a href="#header" class="menu-link link">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#about" class="menu-link link">About</a>
+                    <a href="#hero" class="menu-link link">About</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#fav" class="menu-link link">Service</a>
+                    <a href="#" class="menu-link link">Service</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link link">Menu</a>
+                    <a href="#fav" class="menu-link link">Menu</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link link">Contact</a>
+                    <a href="#contact" class="menu-link link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -70,11 +70,36 @@
             cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
             <button class="hero-order" id="openForm2">Order Now</button>
             <img class="hero-img" src="./img/hero-tablet.png" alt="food photo"
-            srcset="./img/hero-tablet.png 292w,
-            ./img/hero-tablet@2x.png 584w,
-            ./img/hero-desk.png 511w,
-            ./img/hero-desk@2x.png 1022w"
-            sizes="(min-width: 768px) 292px, (min-width: 1280px) 511px">
+                srcset="./img/hero-tablet.png 292w,
+                ./img/hero-tablet@2x.png 584w,
+                ./img/hero-desk.png 511w,
+                ./img/hero-desk@2x.png 1022w"
+                sizes="(min-width: 768px) 292px, (min-width: 1280px) 511px">
+            <div class="photo-container">
+                <div class="photos">
+                    <img class="photo" src="./img/chris-desk.png" 
+                    alt="dish">
+                    <img class="photo" src="./img/hero-desk.png" 
+                    alt="dish">
+                    <img class="photo" src="./img/pngwing-desk.png" 
+                    alt="dish">
+                </div>
+                
+            </div>
+
+            <button onclick="moveRight()" class="right">
+                <svg class="r-svg" width="40" height="48">
+                <use href="./img/sprite.svg#right"></use>
+                </svg>
+            </button>
+            <button onclick="moveLeft()" class="left">
+                <svg class="l-svg" width="40" height="48">
+                <use href="./img/sprite.svg#left">
+                </use>
+                </svg>
+            </button>
+            
+            
         </section>
 
         <section class="about" id="about">
@@ -224,7 +249,7 @@
             
         </section>
 
-        <section class="comments">
+        <section class="comments" >
             <div class="com-div container">
                 <h1 class="com-h">What our Customers Say</h1>
                 <p class="com-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -262,7 +287,7 @@
             
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-div container">
                 <img src="./img/banana-mob.png" alt="banana" 
                     class="contact-img"
@@ -294,8 +319,8 @@
                 <li class="footer-item"><a href="" class="footer-item-link">Home</a></li>
                 <li class="footer-item"><a href="" class="footer-item-link">About</a></li>
                 <li class="footer-item"><a href="" class="footer-item-link">Service</a></li>
-                <li class="footer-item"><a href="" class="footer-item-link">Menu</a></li>
-                <li class="footer-item"><a href="" class="footer-item-link">Contact</a></li>
+                <li class="footer-item"><a href="#fav" class="footer-item-link">Menu</a></li>
+                <li class="footer-item"><a href="#contact" class="footer-item-link">Contact</a></li>
             </ul>
             <div class="footer-desk">
                 <h2 class="footer-h2">Subscribe</h2>
@@ -315,6 +340,18 @@
 
             <p class="footer-p-bot">2022 FoodSta. All right reserved.</p>
         </div>
+
+
+
+        <!-- <div class="photo-container">
+            <div class="photos">
+              <img class="photo" src="./img/chris-desk.png" alt="Фото 1">
+              <img class="photo" src="./img/hero-desk.png" alt="Фото 2">
+              <img class="photo" src="./img/pngwing-desk.png" alt="Фото 3">
+            </div>
+          </div> -->
+
+        
     </footer>
 
     <div class="overlay" id="overlay"></div>
@@ -339,5 +376,10 @@
                 <button type="submit" class="form-btn">Send</button>
             </form>
         </div>
+
+
+        
+
+
 </body>
 </html>

@@ -74,3 +74,44 @@ const phoneInput = document.getElementById('phone');
         orderFormDiv.style.display = 'none';
     });
 });
+
+let currentPosition = 1;
+    const photos = document.querySelector('.photos');
+    const leftButton = document.querySelector('.left'); // Вибираємо кнопку "вліво"
+    const rightButton = document.querySelector('.right'); // Вибираємо кнопку "вправо"
+
+    function moveToPosition(position) {
+      photos.style.transform = `translateX(-${currentPosition * 100}%)`;
+      currentPosition = position;
+      hideButtonIfNeeded();
+    }
+    function moveRight() {
+      if (currentPosition < 2) {
+        currentPosition++;
+        photos.style.transform = `translateX(-${currentPosition * 100}%)`;
+        hideButtonIfNeeded();
+      }
+    }
+
+    function moveLeft() {
+      if (currentPosition > 0) {
+        currentPosition--;
+        photos.style.transform = `translateX(-${currentPosition * 100}%)`;
+        hideButtonIfNeeded();
+      }
+    }
+
+    function hideButtonIfNeeded() {
+      if (currentPosition === 0) {
+        leftButton.style.display = 'none';
+      } else if (currentPosition === 2) {
+        rightButton.style.display = 'none';
+      } else {
+        leftButton.style.display = 'block';
+        rightButton.style.display = 'block';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      moveToPosition(1); // Показати другу фотографію
+    });
