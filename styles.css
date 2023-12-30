@@ -10,9 +10,9 @@ p {
   margin-bottom: 0;
 }
 
-p:last-child {
+/* p:last-child {
   margin-bottom: 0;
-}
+} */
 
 ul,
 ol {
@@ -579,6 +579,199 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
         bottom: -3px;
         background: #7EB101;
     }
+
+    .contact{
+        background-color: #FEFEFE;
+    }
+    .contact-div{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .contact-img{
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+    .contact-h{
+        margin: 0 auto;
+        width: 280px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2; /* 33.6px */
+        margin-bottom: 20px;
+    }
+    .contact-p{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 280px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;    
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+    .con-btn{
+        display: inline-flex;
+        height: 42px;
+        padding: 11px 22px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background-color: var(--Button-green, #BBF330);
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5; /* 19.5px */
+        transition: background-color 0.3s ease;
+    }
+    .con-btn:focus,
+    .con-btn:hover{
+        background-color: #FFE450;
+    }
+    .cont-img-desk{
+        display: none;
+    }
+    .footer{
+        
+        /* background-position: right top; */
+        background: var(--White, #FEFEFE);
+        /* Futter shadow */
+        box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.10);
+    }
+
+    
+
+    .footer-div{
+        background-image: url('./img/back-right-mob.jpg'), url('./img/back-bot-mob.png'), url('./img/back-left-mob.jpg');
+        background-repeat: no-repeat;
+        background-position: right top, bottom, top 132px left;
+        
+        position: relative;
+        padding-top: 64px;
+        padding-bottom: 70px;
+    }
+
+    @media screen and (min-resolution: 192dpi) and (min-width:320px),
+        screen and (min-resolution: 2dppx) and (min-width:320px),
+        screen and (min-device-pixel-ratio: 2) and (min-width:320px) {
+        .footer-div {
+        background-image: url('./img/back-right-mob.jpg'),url('./img/back-bot-mob@2x.png'), url('./img/back-left-mob@2x.jpg');
+        background-position: top right, bottom, top 132px left;
+        background-size: 104px 259px, 253px 66px, 110px 120px;
+        }
+}
+    
+    .footer-svg{
+        margin-bottom: 153px;
+    }
+    .footer-nav{
+        position: absolute;
+        top: 64px;
+        right: 112px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-item{
+        color: #000;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        transition: color 0.3s ease;
+    }
+    .footer-item:focus,
+    .footer-item:hover{
+        color: #BBF330;
+    }
+    .footer-h2{
+        width: 280px;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5; /* 21px */
+        margin-bottom: 12px;
+    }
+    .footer-button{
+        margin: 0 auto;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5; /* 19.5px */
+        display: flex;
+        padding: 11px 22px;
+        align-items: center;
+        border-radius: 30px;
+        border: 0.854px solid #7EB101;
+        background-color: #FFF;
+        transition: background-color 0.3s ease;
+        margin-bottom: 20px;
+    }
+    .footer-button:hover,
+    .footer-button:focus{
+        background-color: #7EB101;
+    }
+    #footer-input{
+        border-radius: 30px;
+        border: 0.854px solid var(--Yellow-main, #FFE550);
+        background: var(--White, #FFF);
+    }
+    .footer-privacy{
+        width: 280px;
+        height: 14px;
+        flex-shrink: 0;
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .privacy-link{
+        color: var(--Dark-green, #7EB101);
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+    .footer-list-links{
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+    .footer-links-item{
+        color: var(--Dark-green, #7EB101);
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+    .footer-p-bot{
+        color: #2C2C2C;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -853,6 +1046,93 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
         bottom: 34px;
     }
 
+    .contact-img{
+        display: none;
+    }
+    .contact-h{
+        margin-left: 0;
+        margin-right: 0;
+        width: 656px;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.2; /* 50.4px */
+        margin-bottom: 20px;
+    }
+    .contact-p{
+        width: 656px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .contact-form{
+        flex-direction: row;
+        gap: 24px;
+        justify-content: start;
+        margin: 0 0;
+    }
+    #con-input{
+        margin-bottom: 0;
+    }
+    .cont-img-desk{
+        display: none;
+    }
+
+    .footer-div{
+        background-image: url('./img/back-tab.jpg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        padding-top: 81px;
+        padding-bottom: 100px;
+    }
+    @media screen and (min-resolution: 192dpi) and (min-width:768px),
+        screen and (min-resolution: 2dppx) and (min-width:768px),
+        screen and (min-device-pixel-ratio: 2) and (min-width:768px) {
+        .footer-div {
+        background-image: url('./img/back-tab@2x.jpg');
+        background-size: contain;
+        /* background-size: 785px 806px; */
+        }
+    .footer-nav{
+        flex-direction: row;
+        gap: 28px;
+        top: 100px;
+        right: 228px;
+    }
+    .footer-svg{
+        margin-bottom: 76px;
+    }
+    .footer-form{
+        display: flex;
+        gap: 24px;
+    }
+    .footer-button{
+        margin-left: 0;
+    }
+    #footer-input{
+        margin-bottom: 12px;
+    }
+    .footer-privacy{
+        text-align: left;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+    .footer-list-links{
+        position: absolute;
+        left: 32px;
+        bottom: 100px;
+        justify-content: start;
+        gap: 16px;
+        margin-bottom: 0;
+    }
+    .footer-p-bot{
+        position: absolute;
+        bottom: 100px;
+        right: 32px;
+    }
 
 }
 @media screen and (min-width: 1280px){
@@ -1019,6 +1299,49 @@ box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.10);
         bottom: 18px;
     }
 
+    .contact-div{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .contact-h{
+        margin-bottom: 28.26px;
+    }
+    .contact-p{
+        margin-bottom: 34.26px;
+    }
+    .contact-div{
+        position: relative;
+    }
+    .cont-img-desk{
+        position: absolute;
+        display: inline-block;
+        top: 89px;
+        right: 16px;
+    }
+    .footer-div{
+        background-image: url('./img/back-desk.jpg');
+        background-position: bottom;
+        background-size: contain;
+        height: 395px;
+    }
 
-    
+    @media screen and (min-resolution: 192dpi) and (min-width:768px),
+        screen and (min-resolution: 2dppx) and (min-width:768px),
+        screen and (min-device-pixel-ratio: 2) and (min-width:768px) {
+        .footer-div{
+            background-image: url('./img/back-desk@2x.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+    }
+    .footer-nav{
+        left: 230px;
+    }
+    .footer-desk{
+        position: absolute;
+        top: 100px;
+        right: 16px;
+    }
+} 
 }
